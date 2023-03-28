@@ -1,0 +1,31 @@
+{
+    "headers":{
+        "authority": "api.bilibili.com",
+        "accept": "application/json, text/plain, */*",
+        "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+        "cookie": "LIVE_BUVID=AUTO7315651034715293; i-wanna-go-back=-1; buvid4=D42D5FC4-C893-B894-BB77-E9F43AAF1F6D32245-022021814-XtJXsCkmYwjd734szvx1Ag==; buvid_fp_plain=undefined; CURRENT_BLACKGAP=0; hit-dyn-v2=1; fingerprint3=f70e821749b33d008bb9294e0f99c9ed; nostalgia_conf=-1; blackside_state=0; DedeUserID=23950902; DedeUserID__ckMd5=426d06f1c91e5f2d; b_ut=5; buvid3=DA9FD6C6-3DE1-4D68-45B2-5FEFAC275F3E05010infoc; _uuid=2F410BF63-2242-196F-1124-BDA5F534F4E912614infoc; b_nut=100; CURRENT_FNVAL=4048; rpdid=|(u)~mJRY)Ru0J'uYYm|R|~ku; header_theme_version=CLOSE; CURRENT_QUALITY=80; fingerprint=5131506eaff603847afd4d68b8cee0c6; buvid_fp=ecaceda6ecdd6bcaf33cd42e2beb9e99; bp_video_offset_23950902=775137392664248300; b_lsid=10CCD10E52_1870D3BCB80; home_feed_column=5; SESSDATA=20bfe65f,1695106235,47ce9*31; bili_jct=a515e8e2afa0db641543c15d1f464d8c; sid=5g7k39ox; PVID=1; innersign=1",
+        "origin": "https://www.bilibili.com",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.41",
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "Windows",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site"
+    } ,
+
+    "database":{
+        "desc":"mysql的基本配置",
+        "dbuser":"root",
+        "dbpsw":"ghytfju351",
+        "dbname":"hotvideos"
+    },
+
+    "terms":{
+        "desc":"要爬的期数",
+        "start":200,
+        "end":200
+    },
+    "logpath":"./log.txt"
+}
+

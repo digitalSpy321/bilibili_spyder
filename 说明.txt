@@ -1,0 +1,29 @@
+**配置文件说明：
+	请运行前提前在config.json文件中配置好数据库的相关信息，包括账号、密码、数据库名，日志文件路径，以及自己的QQ号。
+	要爬取的热门视频的期数在term内配置。
+
+
+**环境说明：
+	需要的安装包：
+	requests
+	mysql
+	json
+	beautifulsoup
+	selenium
+
+	需要谷歌浏览器与对应版本的驱动安装（selenium）
+
+
+**运行说明：
+	请务必先登录自己的QQ电脑端
+	执行的具体过程会展现在日志文件中。由于反爬机制，经常会拒绝访问弹幕文件，当此情况出现时可以去error文件夹查看响应内容查找原因
+	运行文件为main.py
+
+
+**数据表内容：
+	【视频】：
+	必看期目（term）；视频BV号（bvid）；作者（vuser，多个作者间用“/”分隔）发布如期（vpudate）；	简介（vdesc，取前1000字）；标签（vtag，多个标签用“/”分隔）；播放量（vview）；点赞量（vlike）；投币量（vcoin）；收藏量（vstar）；分享量（vshare）；弹幕量（vbullet）；评论量（vcomment）.
+	【评论】：
+	所属视频号（bvid）；评论号（rpid）；所属评论号（root，指该回复评论所属的根评论的评论号，若本身为一条独立评论，则该栏为0）；所回复评论号（parent，指该回复评论的上一层评论的评论号，若本身为一条独立评论，则该栏为0）；发布日期（cpudate）；发布者（cuser）；发布者等级（clevel）；IP地址（caddress）；评论内容（ccontent）；评论图片数量（cpicture）；点赞量（clike）；回复量（crcount）；up觉得很赞（cuplike，true为1，false为0）；up回复（cupreply，true为1，false为0）.
+	【弹幕】：
+	所属视频号（bvid）；弹幕号（dmid）；弹幕展示日期（bapdate）；弹幕发布日期（cpudate）；弹幕颜色（bcolor）；弹幕内容（bcontent）.
